@@ -1,0 +1,32 @@
+-- Customers
+INSERT INTO customers VALUES
+(1, 'Alice', 'Bangalore', '2023-01-10'),
+(2, 'Bob', 'Mumbai', '2023-02-15'),
+(3, 'Charlie', 'Delhi', '2023-03-20'),
+(4, 'David', 'Chennai', '2023-04-25');
+
+-- Products
+INSERT INTO products VALUES
+(1, 'Laptop', 'Electronics', 60000),
+(2, 'Phone', 'Electronics', 30000),
+(3, 'Headphones', 'Accessories', 2000),
+(4, 'Keyboard', 'Accessories', 1500),
+(5, 'Monitor', 'Electronics', 12000);
+
+-- Orders
+INSERT INTO orders VALUES
+(101, 1, '2023-06-01'),
+(102, 2, '2023-06-05'),
+(103, 1, '2023-06-10'),
+(104, 3, '2023-06-15'),
+(105, 4, '2023-07-01');
+
+-- Order Details
+INSERT INTO order_details VALUES
+(1, 101, 1, 1),
+(2, 101, 3, 2),
+(3, 102, 2, 1),
+(4, 103, 4, 3),
+(5, 104, 5, 1),
+(6, 105, 1, 1),
+(7, 105, 2, 2);

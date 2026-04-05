@@ -1,0 +1,7 @@
+SELECT 
+    o.order_id,
+    SUM(p.price * od.quantity) AS total_revenue
+FROM orders o
+JOIN order_details od ON o.order_id = od.order_id
+JOIN products p ON p.product_id = od.product_id
+GROUP BY o.order_id;

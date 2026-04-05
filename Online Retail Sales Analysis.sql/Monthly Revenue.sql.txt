@@ -1,0 +1,8 @@
+SELECT 
+    strftime('%Y-%m', o.order_date) AS month, -- For SQLite
+    SUM(p.price * od.quantity) AS revenue
+FROM orders o
+JOIN order_details od ON o.order_id = od.order_id
+JOIN products p ON p.product_id = od.product_id
+GROUP BY month
+ORDER BY month;
