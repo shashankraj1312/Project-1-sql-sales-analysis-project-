@@ -40,4 +40,4 @@ This is an intermediate-level SQL project that simulates an e-commerce retail da
 Intermediate
 
 ## 📌 Author
-Your Name
+Shashank Raj
